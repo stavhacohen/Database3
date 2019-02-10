@@ -1,0 +1,26 @@
+﻿CREATE TABLE [ND].[Staging_assortment_product_update] (
+    [meta_valid_from]          DATETIME         NOT NULL,
+    [meta_valid_to]            DATETIME         NOT NULL,
+    [meta_id_update]           UNIQUEIDENTIFIER NULL,
+    [meta_loaded]              DATETIME         NOT NULL,
+    [meta_origin]              NVARCHAR (510)   NOT NULL,
+    [meta_loaded_by]           [sysname]        NOT NULL,
+    [Department]               INT              NULL,
+    [Department_name_HE]       NVARCHAR (255)   NULL,
+    [Subdepartment]            INT              NULL,
+    [Subdepartment_name_HE]    NVARCHAR (255)   NULL,
+    [Category]                 INT              NULL,
+    [Category_name_HE]         NVARCHAR (255)   NULL,
+    [Group]                    INT              NULL,
+    [Group_name_HE]            NVARCHAR (255)   NULL,
+    [Subgroup]                 INT              NULL,
+    [Subgroup_name_HE]         NVARCHAR (255)   NULL,
+    [Product_ID]               BIGINT           NULL,
+    [Product_name_HE]          NVARCHAR (255)   NULL,
+    [Grouping]                 INT              NULL,
+    [Brand]                    NVARCHAR (20)    NULL,
+    [Brand_HE]                 NVARCHAR (255)   NULL,
+    [Category_Manager]         INT              NULL,
+    [Category_Manager_name_HE] NVARCHAR (255)   NULL
+);
+

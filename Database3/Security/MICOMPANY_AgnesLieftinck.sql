@@ -1,0 +1,2 @@
+﻿CREATE USER [MICOMPANY\AgnesLieftinck] FOR LOGIN [MICOMPANY\AgnesLieftinck];
+

@@ -1,0 +1,63 @@
+﻿
+
+CREATE VIEW [tmp].[dataset] AS 
+SELECT [PromotionNumber]
+      ,[PromotionStartDate]
+      ,[PromotionEndDate]
+      ,[Length]
+      ,[ProductNumber]
+      ,[Product_name_HE]
+      ,[TransactionDate]
+      ,[Branch_name_EN]
+      ,[SourceInd]
+      ,[Promotion_type]
+      ,[Department_name_EN]
+      ,[Category_name_EN]
+      ,[Group_name_HE]
+      ,[Subgroup_name_HE]
+      ,[Multibuy_quantity]
+      ,[Area_in_store]
+      ,[Display_type]
+      ,[Folder]
+      ,[Real_quantity]
+      ,[Baseline_quantity]
+      ,[Uplift]
+      ,[Revenue_1_promotion]
+      ,[Revenue_2_subs_promo]
+      ,[Revenue_3_subs_group]
+      ,[Revenue_4_promobuyer_existing]
+      ,[Revenue_5_promobuyer_new]
+      ,[Revenue_6_new_customer]
+      ,[Revenue_7_product_adoption]
+      ,[Revenue_8_hoarding]
+      ,CAST(Revenue_value_effect AS INT) Revenue_value_effect
+      ,[Margin_1_promotion]
+      ,[Margin_2_subs_promo]
+      ,[Margin_3_subs_group]
+      ,[Margin_4_promobuyer_existing]
+      ,[Margin_5_promobuyer_new]
+      ,[Margin_6_new_customer]
+      ,[Margin_7_product_adoption]
+      ,[Margin_8_hoarding]
+      ,CAST(Margin_value_effect AS INT) Margin_value_effect
+      ,[Promotion_segment]
+      ,[Number_customers]
+      ,[Promotion_customers]
+      ,[New_customers]
+      ,[Adopting_customers]
+      ,[Total_supplier_participation]
+      ,[Promotion_price_per_product]
+      ,[Regular_price_per_product]
+      ,[Discount]
+      ,[Promotion_margin_per_product]
+      ,[Regular_margin_per_product]
+      ,[Selling_price]
+      ,[Supplier_participation_per_product]
+	  ,DATEPART (week, [TransactionDate]) AS Yearweek
+	  ,DATEPART (month, [TransactionDate]) AS [Month]
+	  ,DATEPART (QUARTER, [TransactionDate]) AS [Quarter]
+	  ,CASE WHEN PromotionEndDate  >= GETDATE() THEN 'Running'
+			WHEN PromotionEndDate  BETWEEN DATEADD(dd, -28, getdate()) AND GETDATE() THEN	'completed <=4 weeks ago'
+			ELSE 'completed > 4 weeks ago' END Promotion_status
+  FROM [Shufersal].[dbo].[PG_ROI_analysetabel_20170912] a
+

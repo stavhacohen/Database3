@@ -1,0 +1,50 @@
+﻿GRANT CONNECT TO [MICOMPANY\jesperdegroot];
+
+
+GO
+GRANT CONNECT TO [MICOMPANY\helenrijkes];
+
+
+GO
+GRANT CONNECT TO [MICOMPANY\fransbookholt];
+
+
+GO
+GRANT CONNECT TO [MICOMPANY\lucaspeters];
+
+
+GO
+GRANT CONNECT TO [MICOMPANY\DylanGoldsborough];
+
+
+GO
+GRANT CONNECT TO [SQL_shufersal];
+
+
+GO
+GRANT CONNECT TO [MICOMPANY\jessevandenakker];
+
+
+GO
+GRANT CONNECT TO [MICOMPANY\AgnesLieftinck];
+
+
+GO
+GRANT CONNECT TO [MICOMPANY\grp-sec-dis-shufersal];
+
+
+GO
+GRANT CONNECT TO [MICOMPANY\thomasbennis];
+
+
+GO
+GRANT CONNECT TO [MICOMPANY\WilfreddeGraaf];
+
+
+GO
+GRANT CONNECT TO [MICOMPANY\arjesanders];
+
+
+GO
+GRANT CONNECT TO [MICOMPANY\matanmarudi];
+

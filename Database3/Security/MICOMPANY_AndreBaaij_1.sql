@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [MICOMPANY\AndreBaaij]
+    AUTHORIZATION [MICOMPANY\AndreBaaij];
+

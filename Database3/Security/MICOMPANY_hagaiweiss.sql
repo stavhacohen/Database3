@@ -1,0 +1,3 @@
+﻿CREATE USER [MICOMPANY\hagaiweiss] FOR LOGIN [MICOMPANY\hagaiweiss]
+    WITH DEFAULT_SCHEMA = [MICOMPANY\hagaiweiss];
+

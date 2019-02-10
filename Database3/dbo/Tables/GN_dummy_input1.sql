@@ -1,0 +1,27 @@
+﻿CREATE TABLE [dbo].[GN_dummy_input1] (
+    [rownum_After_suppliers]            BIGINT          NULL,
+    [rownum]                            BIGINT          NULL,
+    [PromotionNumber]                   BIGINT          NULL,
+    [PromotionStartDate]                DATE            NULL,
+    [PromotionEndDate]                  DATE            NULL,
+    [ProductNumber]                     BIGINT          NULL,
+    [Multibuy_quantity]                 INT             NULL,
+    [Branch_name_EN]                    VARCHAR (7)     NULL,
+    [SourceInd]                         INT             NULL,
+    [TransactionDate]                   DATE            NULL,
+    [Real_quantity]                     DECIMAL (10, 2) NULL,
+    [Baseline_quantity]                 DECIMAL (10, 2) NULL,
+    [Cat_Revenue_3_subs_group]          FLOAT (53)      NULL,
+    [Cat_Revenue_4_promobuyer_existing] FLOAT (53)      NULL,
+    [Cat_Revenue_5_promobuyer_new]      FLOAT (53)      NULL,
+    [Cat_Revenue_6_new_customer]        FLOAT (53)      NULL,
+    [Quantity_7_product_adoption]       DECIMAL (15, 2) NULL,
+    [Quantity_8_hoarding]               DECIMAL (15, 2) NULL,
+    [SUPPLIER_ID]                       INT             NULL,
+    [cnt_suppliers]                     INT             NULL,
+    [perc_CatRev_customerEffects]       FLOAT (53)      NULL,
+    [perc_CatRev_Substitution]          FLOAT (53)      NULL,
+    [SellOut_Prod]                      FLOAT (53)      NULL,
+    [SellOut_Prom]                      REAL            NULL
+);
+
